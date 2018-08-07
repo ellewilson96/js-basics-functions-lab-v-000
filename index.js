@@ -1,10 +1,11 @@
-function distanceFromHqInBlocks (number) {
-    number = Math.abs(number - 42)
-    return number
+function distanceFromHqInBlocks (blockNumber) {
+  if (blockNumber > 42) {
+    return blockNumber - 42;
+  } else {
+    return 42 - blockNumber;
+  }
 }
 
-function distanceFromHqInFeet (number) {
-  distanceFromHqInBlocks(number); {
-  number * 264 }
-  return number
+function distanceFromHqInFeet (blockNumber) {
+  return distanceFromHqInBlocks(blockNumber) * 264;
 }
