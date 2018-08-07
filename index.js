@@ -11,5 +11,5 @@ function distanceFromHqInFeet (blockNumber) {
 }
 
 function distanceTravelledInFeet (one, two) {
-  return two - one * 264;
+  return Math.abs(two - one) * 264;
 }
