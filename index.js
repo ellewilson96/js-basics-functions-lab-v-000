@@ -1,5 +1,5 @@
-function distanceFromHqInBlocks (hq, pickup) {
-    return pickup - hq
+function distanceFromHqInBlocks (number) {
+    return number - 42
 }
 
 function distanceFromHqInFeet (someValue) {
